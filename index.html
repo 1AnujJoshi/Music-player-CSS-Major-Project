@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://kit.fontawesome.com/a6ec278789.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="header">
+      <div class="nav">
+        <div id="brand-icon">
+          <img src="Assets/images/fox-icon.png" />
+        </div>
+        <div>
+          <h1>Fox Player</h1>
+        </div>
+        <div class="navigation">
+          <ul class="horizontal-list text-center nav-menu">
+            <li>
+              <a href=""> Home</a>
+            </li>
+            <li>
+              <a href="">Favourites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown">
+        <!--Dropdown-->
+        <button class="dropbtn"><i class="fas fa-bars"></i></button>
+        <div class="dropdown-content">
+          <a href=""
+            ><img
+              style="width: 2rem; border-radius: 50%"
+              src="Assets/images/high.jpg"
+              alt="display picture"
+          /></a>
+          <a href="#"> Home </a>
+          <a href="#"> Favourites </a>
+          <input
+            style="margin-left: 1rem; margin-right: 1rem"
+            type="search-bar"
+            name="search-bar"
+            placeholder="Search"
+          /><i
+            style="
+              color: rgb(255, 249, 249);
+              margin-left: 1rem;
+              margin-top: 0.5rem;
+            "
+            class="fas fa-search"
+          ></i>
+          <a href=""><i style="color: white" class="fas fa-bell"></i></a>
+        </div>
+      </div>
+      <div class="right-head">
+        <div class="search-box">
+          <div id="search-bar">
+            <a href=""> <i style="color: grey" class="fas fa-search"></i> </a>
+            <input
+              id="input"
+              type="search-bar"
+              name="search-bar"
+              placeholder="Search"
+            />
+            <i style="color: grey" class="fas fa-microphone"></i>
+          </div>
+        </div>
+
+        <div class="notification-profile">
+          <div>
+            <a href=""><i style="color: white" class="fas fa-bell"></i></a>
+          </div>
+          <div>
+            <a href=""
+              ><img
+                style="width: 2rem; border-radius: 50%"
+                src="Assets/images/high.jpg"
+                alt="display picture"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-section">
+      <!-- Main-Section Start-->
+      <div>
+        <div class="carousel">
+          <!--Carousel-->
+          <ul class="slides">
+            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="Assets/images/ban.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-10" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-2" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-2" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="Assets/images/b2.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-1" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-3" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-3" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="Assets/images/b3.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-2" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-4" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-4" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="Assets/images/b4.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-3" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-5" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-5" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="Assets/images/b5.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-4" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-6" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-6" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="Assets/images/b6.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-5" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-7" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-7" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="Assets/images/b7.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-6" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-8" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-8" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="Assets/images/b8.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-7" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-9" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-9" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="Assets/images/b9.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-8" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-10" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-10" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="Assets/images/b10.jpg" />
+              </div>
+              <div class="carousel-controls">
+                <label for="img-9" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-1" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <div class="carousel-dots">
+              <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+              <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+              <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+              <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+              <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
+              <label for="img-6" class="carousel-dot" id="img-dot-6"></label>
+              <label for="img-7" class="carousel-dot" id="img-dot-7"></label>
+              <label for="img-8" class="carousel-dot" id="img-dot-8"></label>
+              <label for="img-9" class="carousel-dot" id="img-dot-9"></label>
+              <label for="img-10" class="carousel-dot" id="img-dot-10"></label>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div id="trend">
+        <!--Trending section-->
+        <div class="section-heading text-left">
+          <h1>Trending Songs</h1>
+        </div>
+        <div class="Trending text text-center">
+          <div class="img-hover-zoom img-hover-zoom--brightness">
+            <img src="Assets/images/hwga.jpg" />
+            <p style="opacity: 1; z-index: 10">Heatwaves</p>
+          </div>
+
+          <div class="img-hover-zoom img-hover-zoom--brightness">
+            <img src="Assets/images/afg.png" />
+          </div>
+          <div class="img-hover-zoom img-hover-zoom--brightness">
+            <img src="Assets/images/syjb.png" />
+          </div>
+          <div class="img-hover-zoom img-hover-zoom--brightness">
+            <img src="Assets/images/eyid.jpeg" />
+          </div>
+          <div class="img-hover-zoom img-hover-zoom--brightness">
+            <img src="Assets/images/ct.jpg" />
+          </div>
+          <div class="img-hover-zoom img-hover-zoom--brightness">
+            <img src="Assets/images/ib.jpg" />
+          </div>
+          <div class="img-hover-zoom img-hover-zoom--brightness">
+            <img src="Assets/images/eom.jpg" />
+          </div>
+          <div class="img-hover-zoom img-hover-zoom--brightness">
+            <img src="Assets/images/bruno.jpg" />
+          </div>
+          <div class="img-hover-zoom img-hover-zoom--brightness">
+            <img src="Assets/images/es.jpeg" />
+          </div>
+          <div class="img-hover-zoom img-hover-zoom--brightness">
+            <img src="Assets/images/ily.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <!-- Popular artist -->
+        <h1>Popular Artists</h1>
+      </div>
+
+      <div class="artist">
+        <div class="popular-artist text text-center">
+          <div>
+            <a href="playlist.html"
+              ><img src="Assets/images/ts.jpg" alt="Taylor Swift" />
+            </a>
+            <p>Taylor Swift</p>
+          </div>
+          <div>
+            <a href="playlist.html"
+              ><img src="Assets/images/adele.jpg" alt="Adele"
+            /></a>
+            <p>Adele</p>
+          </div>
+          <div>
+            <a href="playlist.html"
+              ><img src="Assets/images/eminen.jpg" alt="Eminem"
+            /></a>
+            <p>Eminem</p>
+          </div>
+          <div>
+            <a href="playlist.html"
+              ><img src="Assets/images/jb.jpg" alt="Justin Bieber"
+            /></a>
+            <p>Justin Bieber</p>
+          </div>
+          <div>
+            <a href="playlist.html"
+              ><img src="Assets/images/tw.jpg" alt="The Weeknd"
+            /></a>
+            <p>The Weeknd</p>
+          </div>
+          <div>
+            <a href="playlist.html"
+              ><img src="Assets/images/ed.jpg" alt="Ed Sheeran"
+            /></a>
+            <p>Ed Sheeran</p>
+          </div>
+          <div>
+            <a href="playlist.html"
+              ><img src="Assets/images/drake.jpg" alt="Drake"
+            /></a>
+            <p>Drake</p>
+          </div>
+          <div>
+            <a href="playlist.html"
+              ><img src="Assets/images/ag.jpg" alt="Ariana Grande"
+            /></a>
+            <p>Ariana Grande</p>
+          </div>
+          <div>
+            <a href="playlist.html"
+              ><img src="Assets/images/be.jpg" alt="Billie Eilish"
+            /></a>
+            <p>Billie Eilish</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <!-- Moods -->
+        <h1>Moods</h1>
+      </div>
+      <div class="general">
+        <div class="popular-artist text text-center">
+          <div class="container">
+            <img
+              src="Assets/images/rel.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Relaxed</h3>
+          </div>
+
+          <div class="container">
+            <img
+              src="Assets/images/rom.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Romantic</h3>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/med.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Meditation</h3>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/ins.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Inspiration</h3>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/mor.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Morning</h3>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/sad.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Sad</h3>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/tri.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Road trip</h3>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/suf.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Sufi</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <!-- Latest English -->
+        <h1>Latest English</h1>
+      </div>
+      <div class="general">
+        <div class="popular-artist text text-center">
+          <div class="container">
+            <img src="Assets/images/jb.jpg" class="image" style="width: 100%" />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+
+          <div class="container">
+            <img src="Assets/images/ag.jpg" class="image" style="width: 100%" />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/adele.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/afg.png"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/high.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/hwga.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img src="Assets/images/be.jpg" class="image" style="width: 100%" />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/bruno.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <h1>Latest Hindi</h1>
+      </div>
+      <div class="general">
+        <div class="popular-artist text text-center">
+          <div class="container">
+            <img src="Assets/images/jb.jpg" class="image" style="width: 100%" />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+
+          <div class="container">
+            <img src="Assets/images/ag.jpg" class="image" style="width: 100%" />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/adele.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/afg.png"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/high.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/hwga.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img src="Assets/images/be.jpg" class="image" style="width: 100%" />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+          <div class="container">
+            <img
+              src="Assets/images/bruno.jpg"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="triangle"><img src="Assets/images/play1.png" /></div>
+            </div>
+            <h3>Song name</h3>
+            <p>Description</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main-Section End -->
+
+    <div class="audio-player">
+      <!--Audio player-->
+      <div>
+        <img
+          style="height: 7vh; border-radius: 10px"
+          src="Assets/images/high.jpg"
+        />
+      </div>
+      <div>
+        <p style="color: #222"><b>High </b>- The Chainsmokers</p>
+      </div>
+      <div>
+        <audio
+          controls="controls"
+          src="Assets/songs/The Chainsmokers - High.mp3"
+        ></audio>
+      </div>
+    </div>
+  </body>
+</html>
